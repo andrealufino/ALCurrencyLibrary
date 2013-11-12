@@ -21,6 +21,7 @@
 		87F25E7E1832347200354E50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F25E601832347200354E50 /* UIKit.framework */; };
 		87F25E861832347200354E50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87F25E841832347200354E50 /* InfoPlist.strings */; };
 		87F25E881832347200354E50 /* ALCurrencyLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F25E871832347200354E50 /* ALCurrencyLibraryTests.m */; };
+		87F25E99183234FC00354E50 /* ALCurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F25E98183234FC00354E50 /* ALCurrency.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		87F25E831832347200354E50 /* ALCurrencyLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ALCurrencyLibraryTests-Info.plist"; sourceTree = "<group>"; };
 		87F25E851832347200354E50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		87F25E871832347200354E50 /* ALCurrencyLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALCurrencyLibraryTests.m; sourceTree = "<group>"; };
+		87F25E97183234FC00354E50 /* ALCurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCurrency.h; sourceTree = "<group>"; };
+		87F25E98183234FC00354E50 /* ALCurrency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCurrency.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				87F25E621832347200354E50 /* ALCurrencyLibrary */,
+				87F25E631832347200354E50 /* Supporting Files */,
 				87F25E811832347200354E50 /* ALCurrencyLibraryTests */,
 				87F25E5B1832347200354E50 /* Frameworks */,
 				87F25E5A1832347200354E50 /* Products */,
@@ -112,13 +116,8 @@
 		87F25E621832347200354E50 /* ALCurrencyLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				87F25E6B1832347200354E50 /* ALCLAppDelegate.h */,
-				87F25E6C1832347200354E50 /* ALCLAppDelegate.m */,
-				87F25E6E1832347200354E50 /* Main.storyboard */,
-				87F25E711832347200354E50 /* ALCLViewController.h */,
-				87F25E721832347200354E50 /* ALCLViewController.m */,
-				87F25E741832347200354E50 /* Images.xcassets */,
-				87F25E631832347200354E50 /* Supporting Files */,
+				87F25E931832348900354E50 /* Classes */,
+				87F25E941832348E00354E50 /* Resources */,
 			);
 			path = ALCurrencyLibrary;
 			sourceTree = "<group>";
@@ -132,6 +131,7 @@
 				87F25E6A1832347200354E50 /* ALCurrencyLibrary-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = ALCurrencyLibrary;
 			sourceTree = "<group>";
 		};
 		87F25E811832347200354E50 /* ALCurrencyLibraryTests */ = {
@@ -150,6 +150,52 @@
 				87F25E841832347200354E50 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87F25E911832347900354E50 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				87F25E6B1832347200354E50 /* ALCLAppDelegate.h */,
+				87F25E6C1832347200354E50 /* ALCLAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		87F25E921832348300354E50 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				87F25E711832347200354E50 /* ALCLViewController.h */,
+				87F25E721832347200354E50 /* ALCLViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		87F25E931832348900354E50 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				87F25E911832347900354E50 /* AppDelegate */,
+				87F25E921832348300354E50 /* Main */,
+				87F25E96183234CA00354E50 /* ALCurrencyLibrary */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		87F25E941832348E00354E50 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				87F25E6E1832347200354E50 /* Main.storyboard */,
+				87F25E741832347200354E50 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		87F25E96183234CA00354E50 /* ALCurrencyLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				87F25E97183234FC00354E50 /* ALCurrency.h */,
+				87F25E98183234FC00354E50 /* ALCurrency.m */,
+			);
+			path = ALCurrencyLibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +299,7 @@
 				87F25E6D1832347200354E50 /* ALCLAppDelegate.m in Sources */,
 				87F25E691832347200354E50 /* main.m in Sources */,
 				87F25E731832347200354E50 /* ALCLViewController.m in Sources */,
+				87F25E99183234FC00354E50 /* ALCurrency.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
