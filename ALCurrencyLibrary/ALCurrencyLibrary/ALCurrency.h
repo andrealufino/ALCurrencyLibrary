@@ -21,7 +21,7 @@ typedef void(^ALCurrencyFailureBlock)(NSError *error);
  Get the list of the common currencies iso codes
  @return NSArray with the common currencies iso codes
  */
-+ (NSArray *)commonCurrenciesISOCode;
++ (NSArray *)commonCurrenciesISOCodes;
 
 /*!
  Convert the passed value from the first currency to the second

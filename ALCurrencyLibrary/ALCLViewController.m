@@ -23,7 +23,7 @@
     [super viewDidLoad];
     
     // Get all common currencies
-    self.currencies = [ALCurrency commonCurrenciesISOCode];
+    self.currencies = [ALCurrency commonCurrenciesISOCodes];
     
     // Set delegates and data sources of the two picker views
     self.pickerFrom.dataSource = self;

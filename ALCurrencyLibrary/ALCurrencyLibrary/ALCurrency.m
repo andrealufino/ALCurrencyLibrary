@@ -16,7 +16,7 @@
 
 @implementation ALCurrency
 
-+ (NSArray *)commonCurrenciesISOCode {
++ (NSArray *)commonCurrenciesISOCodes {
     NSArray *currencies = [NSLocale commonISOCurrencyCodes];
     return currencies;
 }
