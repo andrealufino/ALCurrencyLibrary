@@ -13,7 +13,7 @@ typedef void(^ALCurrencyCompletionBlock)(BOOL success, CGFloat convertedValue);
 typedef void(^ALCurrencyFailureBlock)(NSError *error);
 
 /*!
- * This class is useful to convert from currency A to currency and viceversa. It uses the service offered by http://rate-exchange.appspot.com/.
+ * This class is useful to convert from currency A to currency and viceversa. It uses the service offered by http://rate-exchange.appspot.com/
  */
 @interface ALCurrency : NSObject
 
