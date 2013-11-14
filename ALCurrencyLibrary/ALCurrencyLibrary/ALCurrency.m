@@ -14,10 +14,6 @@
 
 //http://rate-exchange.appspot.com/currency?from=USD&to=EUR&q=1
 
-@interface ALCurrency ()
-
-@end
-
 @implementation ALCurrency
 
 + (NSArray *)commonCurrenciesISOCode {
