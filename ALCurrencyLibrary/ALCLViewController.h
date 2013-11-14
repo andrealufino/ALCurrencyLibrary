@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ALCLViewController : UIViewController
+@interface ALCLViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *txtValue;
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerFrom;
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerTo;
+@property (weak, nonatomic) IBOutlet UILabel *lblValueConverted;
+
+- (IBAction)convert:(id)sender;
 
 @end

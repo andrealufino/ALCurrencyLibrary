@@ -45,7 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		874DD1851833D03900E43E62 /* ALCurrencyCodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALCurrencyCodes.h; sourceTree = "<group>"; };
+		874DD1851833D03900E43E62 /* ALCurrencyCodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ALCurrencyCodes.h; path = ALCurrencyCodes/ALCurrencyCodes.h; sourceTree = "<group>"; };
 		87F25E591832347200354E50 /* ALCurrencyLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALCurrencyLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F25E5C1832347200354E50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		87F25E5E1832347200354E50 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -114,6 +114,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87B00D401835138B004F92F0 /* ALCurrencyCodes */ = {
+			isa = PBXGroup;
+			children = (
+				874DD1851833D03900E43E62 /* ALCurrencyCodes.h */,
+			);
+			name = ALCurrencyCodes;
+			sourceTree = "<group>";
+		};
 		87F25E501832347200354E50 = {
 			isa = PBXGroup;
 			children = (
@@ -227,7 +235,7 @@
 			children = (
 				87F25E97183234FC00354E50 /* ALCurrency.h */,
 				87F25E98183234FC00354E50 /* ALCurrency.m */,
-				874DD1851833D03900E43E62 /* ALCurrencyCodes.h */,
+				87B00D401835138B004F92F0 /* ALCurrencyCodes */,
 				87F25EBA18326CD800354E50 /* HTTP Client */,
 			);
 			path = ALCurrencyLibrary;
@@ -266,6 +274,7 @@
 				87F25EB818324F8200354E50 /* ALCLHTTPClient.m */,
 			);
 			name = "HTTP Client";
+			path = ALHttpClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
