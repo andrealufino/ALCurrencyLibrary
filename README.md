@@ -8,14 +8,14 @@ Use
 
 The use is very simple. Here is it :
 
-    ```[ALCurrency convertFromCurrency:ALC_USD toCurrency:ALC_EUR value:100.0 completionBlock:^(BOOL success, CGFloat convertedValue) {
+    [ALCurrency convertFromCurrency:ALC_USD toCurrency:ALC_EUR value:100.0 completionBlock:^(BOOL success, CGFloat convertedValue) {
         if (success) {
             // Set the converted value in the label
             NSLog(@"Value converted = %f", convertedValue);
         }
     } failureBlock:^(NSError *error) {
         NSLog(@"Error");
-    }];```
+    }];
     
 With the method ``` - (NSArray *)commonCurrenciesIsoCodes ``` you can get a list of the 162 common currencies in the world.
 
