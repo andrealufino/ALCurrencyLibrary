@@ -7,6 +7,7 @@
 //
 
 #import "ALCLViewController.h"
+#import "ALCurrency.h"
 
 @interface ALCLViewController ()
 
@@ -17,7 +18,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [ALCurrency convertFromCurrency:@"USD" toCurrency:@"EUR" value:50 completionBlock:^(BOOL success, CGFloat convertedValue) {
+        NSLog(@"Il valore convertito è di %f", convertedValue);
+    } failureBlock:^(NSError *error) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning
